@@ -74,11 +74,13 @@ export default function Home() {
       <div className="home_container">
         <div className="linear"></div>
         <div className="main_container">
-          <img src="/foodfyt.jpeg" alt="" className="logo" />
+          <img src="/Asset1.png" alt="" className="logo" />
           <div className="header">Get Notified When Launch</div>
           <iframe
             className="youtube_vd"
-            src="https://www.youtube.com/embed/NA3Bv4nU_kA"
+            src="https://www.youtube.com/embed/NA3Bv4nU_kA?rel=0&amp;fs=0&amp;showinfo=0"
+            allowfullscreen
+            frameborder="0"
           ></iframe>
           <div className="time_container">
             <div className="time_child">
