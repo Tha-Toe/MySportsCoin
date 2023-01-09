@@ -21,7 +21,7 @@ export default function Home() {
   const emailRef = useRef();
   const phoneRef = useRef();
 
-  const deadLine = new Date(2022, 11, 25);
+  const deadLine = new Date(2023, 0, 28, 23, 58, 0);
   let count = setInterval(() => {
     const currDate = new Date();
     let currTimeMili = currDate.getTime();
@@ -74,14 +74,9 @@ export default function Home() {
       <div className="home_container">
         <div className="linear"></div>
         <div className="main_container">
-          <img src="/Asset1.png" alt="" className="logo" />
-          <div className="header">Get Notified When Launch</div>
-          <iframe
-            className="youtube_vd"
-            src="https://www.youtube.com/embed/NA3Bv4nU_kA?rel=0&amp;fs=0&amp;showinfo=0"
-            allowfullscreen
-            frameborder="0"
-          ></iframe>
+          <img src="/MySportsCoin log0.1-04.png" alt="" className="logo" />
+          <div className="header">Coming Soon</div>
+
           <div className="time_container">
             <div className="time_child">
               <div className="time day">{day}</div>
@@ -100,6 +95,8 @@ export default function Home() {
               <div className="type">sec</div>
             </div>
           </div>
+          <div className="get_notified">Get Notified When Launch</div>
+
           <div className="subscribe_container">
             <input
               type="text"
@@ -129,10 +126,10 @@ export default function Home() {
               onChange={(e) => setPhoneNumber(e.currentTarget.value)}
               ref={phoneRef}
             />
+            <button className="subscribe_button" onClick={handleSubmit}>
+              Subscribe Now
+            </button>
           </div>
-          <button className="subscribe_button" onClick={handleSubmit}>
-            Subscribe Now
-          </button>
           <div className="note">
             We do not sell or share your information with anyone else.
           </div>
